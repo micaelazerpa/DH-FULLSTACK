@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:ital,wght@1,300&display=swap');
+/* selector (etiqueta, clase o id){
+    propiedad: valor
+} */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#EAC926;
+    /* color: rgb(red, green, blue); */
+    color:#03264C;
+    font-size: 12px;    
+}
+main{
+    text-align: center;
+    width: 90%;
+}
+header{
+    border-style: solid;
+    border-color: #666;
+    color: #03264C;
+}
+footer{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 24px;
+}
+article{
+    padding: 10px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento .descripciones{
+    font-size: 16px;
+}
+.burger-menu{
+    background-color:#1259c3;
+    text-align: center;
+}
+.fa-solid{
+    font-size: 2rem;
+}
