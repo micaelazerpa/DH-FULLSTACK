@@ -14,7 +14,8 @@ body{
 }
 main{
     text-align: center;
-    width: 90%;
+    width: 90vw;
+    margin: auto;
 }
 header{
     border: solid 2px #666;
@@ -30,6 +31,7 @@ footer .fa-solid{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 h2{
     font-size: 24px;
@@ -37,6 +39,19 @@ h2{
 article{
     padding: 10px;
     background-color: white;
+    margin: 10px;
+    box-shadow: none;
+}
+button{
+    background-color:#1259c3;
+    color: white;
+    border-radius: 4px;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 70vw;
 }
 .ultima-vista{
     padding: 10px
@@ -48,15 +63,19 @@ article{
     font-size: 16px;
     color:#39b54a;;
 } 
-.descripciones{
+.descripcion{
     font-size: 16px;
+    display: none;
 }
-.burger-menu{
-    background-color:#1259c3;
+.menu{
+    display:none;
+}
+.burger-menu {
     text-align: center;
+    padding-bottom: 20px;
 }
 .fa-solid{
-    font-size: 2rem;
+    font-size: 1rem;
     
 }
 .fa-truck-fast{
@@ -65,4 +84,38 @@ article{
 .detalle{
     border-top: solid 1px #ebebeb;
     padding: 15px;
+}
+#nomostrar{
+    display: none;
+}
+@media (min-width: 361px ){
+    /* tablets */
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion{
+        display:inline;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .menu{
+        display:flex;
+    }
+
+}
+@media (min-width: 769px){
+    /* desktop */
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion{
+        display:inline;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .menu{
+        display:flex;
+    }
 }
