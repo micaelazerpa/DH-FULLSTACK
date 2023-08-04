@@ -3,6 +3,8 @@
     propiedad: valor
 } */
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 body{
@@ -18,7 +20,6 @@ main{
     margin: auto;
 }
 header{
-    border: solid 2px #666;
     color: #03264C;
     background-color:#EAC926;
 }
@@ -36,6 +37,9 @@ a{
 h2{
     font-size: 24px;
 }
+h1{
+    display: none;
+}
 article{
     padding: 10px;
     background-color: white;
@@ -51,40 +55,79 @@ ul{
     list-style: none;
 }
 img{
-    width: 70vw;
+    width: 100%;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+#logo{
+    width: 50%;
+    height: 30%;
+}
+
+.logo-buscar form{
+    width: 50%;
+}
+div.detalle{
+    position: relative;
 }
 .ultima-vista{
-    padding: 10px
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .precio{
     font-size: 18px;
+    flex-grow: 0.30;
 }
 .descuento{
     font-size: 16px;
-    color:#39b54a;;
+    color:#39b54a;
+    flex-grow: 0.70;
 } 
 .descripcion{
     font-size: 16px;
     display: none;
 }
+.logo-buscar{
+    display: flex;
+    width: 100%;
+}
 .menu{
     display:none;
 }
+
 .burger-menu {
     text-align: center;
     padding-bottom: 20px;
 }
 .fa-solid{
-    font-size: 1rem;
-    
+    font-size: 1rem;  
 }
-.fa-truck-fast{
-    color:#39b54a;
-}
+
 .detalle{
     border-top: solid 1px #ebebeb;
     padding: 15px;
 }
+.box{
+    display: flex;
+    justify-content: center;
+}
+
 #nomostrar{
     display: none;
 }
@@ -92,15 +135,34 @@ img{
     /* tablets */
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 324px;
     }
     .descripcion{
         display:inline;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
     }
     .burger-menu {
         display: none;
     }
     .menu{
         display:flex;
+        justify-content: space-between;
+    }
+    .menu ul {
+        display: flex;
+        
+    }
+    .menu ul li{
+        padding: 10px;
+    }
+    .ultima-vista{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
 }
@@ -108,14 +170,32 @@ img{
     /* desktop */
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 200px;
     }
     .descripcion{
         display:inline;
+    }
+    .container{
+        display: flex;
     }
     .burger-menu {
         display: none;
     }
     .menu{
         display:flex;
+        justify-content: space-between;
+    }
+    .menu ul {
+        display: flex;
+        
+    }
+    .menu ul li{
+        padding: 10px;
+    }
+    .ultima-vista{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
