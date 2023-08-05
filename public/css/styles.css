@@ -26,9 +26,14 @@ header{
 footer{
     text-align: center;
     background-color: white;
+    padding-top: 10px;
 }
+
 footer .fa-solid{
     color: #1259c3;
+}
+footer p{
+    padding: 10px;
 }
 a{
     text-decoration: none;
@@ -57,6 +62,26 @@ ul{
 img{
     width: 100%;
 }
+nav form{
+    display: flex;  
+    border-radius: 10px;  
+    flex-direction: row;
+    background-color: white;
+    margin: 30px 0px;
+    padding: 8px;
+    height: 40px;
+}
+nav form button{
+    width: 30px;
+    background-color: white;
+    color: #666;
+    height: 30px;
+}
+nav form input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 
 main section article i{
     display: block;
@@ -79,6 +104,9 @@ main section article i{
 
 .logo-buscar form{
     width: 50%;
+}
+.logo-buscar p{
+    display: none;
 }
 div.detalle{
     position: relative;
@@ -105,7 +133,7 @@ div.detalle{
 }
 .logo-buscar{
     display: flex;
-    width: 100%;
+    justify-content: space-evenly;
 }
 .menu{
     display:none;
@@ -137,6 +165,9 @@ div.detalle{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 324px;
     }
+    .logo-buscar p{
+        display: inline;
+    }
     .descripcion{
         display:inline;
     }
@@ -164,10 +195,27 @@ div.detalle{
         justify-content: space-evenly;
         align-items: center;
     }
+    .elementos{
+        display: flex;
+    }
 
 }
 @media (min-width: 769px){
     /* desktop */
+    #logo{
+        width: 30%;
+        height: 30%;
+    }
+    
+    .logo-buscar form{
+        width: 50%;
+    }
+    .logo-buscar p{
+        display: inline;
+        padding-top: 50px;
+        width: 20%;
+        text-align: center;
+    }
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 200px;
@@ -198,4 +246,67 @@ div.detalle{
         justify-content: space-evenly;
         align-items: center;
     }
+    .elementos{
+        display: flex;
+    }
 }
+
+/* ------------------Formulario----------------- */
+main#main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+}
+
+form{
+    width: 70vw;
+    max-width: 520px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+form label{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+}
+.opciones label{
+
+    font-weight: normal;
+}
+.opciones p{
+    font-weight: bold;
+}
+
+form input{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    outline: none;
+    margin-bottom: 30px;
+    transition: border 1s;
+}
+
+form input:focus{
+    border: 3px solid rgb(22, 69, 199);
+}
+.form-button{
+    display: flex;
+    justify-content: space-evenly;
+}
+form button{
+    color: white;
+    background-color:#1259c3;;
+    font-weight: 700;
+    border: 2px solid transparent;
+    padding: 5px;
+    transition-property: background-color,  border-radius;
+    transition-duration: 0.5s;
+}
+

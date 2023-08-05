@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primera app</title>
+    <title>home</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontOson -->
@@ -22,7 +22,6 @@
       <h1>Mercado Liebre</h1>
 
       <nav>
-        <div class="container">
           <div class="logo-buscar">
             <img id="logo" src="/img/logo-mercado-liebre.svg" alt="Logo mercado liebre"/>
             <!-- <ul id="nomostrar">
@@ -33,18 +32,14 @@
                 <a href="/product">Products</a>
               </li>
             </ul> -->
-            <form class="buscar">
-              <input type="buscar" alt="Buscar productos, marcas" />
+            <form>
+              <input type="text" name="buscar" id="buscar" placeholder="Buscar productos marcas y más" required>
               <button><i class="fa-solid fa-magnifying-glass"></i></button>
               
             </form>
+            <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
           </div>
-          <ul>
-            <li>
-              <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            </li>
-          </ul>
-        </div>
+        
         <div class="menu">
           <ul class="lista1">
             <li><a href="#">Ofertas</a></li>
@@ -54,8 +49,8 @@
           </ul>
 
           <ul class="lista2">
-            <li><a href="#">Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
-            <li><a href="#">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+            <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
+            <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
             <li><a href="#">Mis compras</a><i class="fa-solid fa-cart-shopping"></i></li>
           </ul>
         </div>
@@ -223,24 +218,36 @@
     </main>
 
     <footer>
-      <i class="fa-solid fa-money-check-dollar"></i>
-      <h3>Pagá con tarjeta o en efectivo</h3>
-      <p>
-        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo
-        en puntos de pago. ¡Y siempre es seguro!
-      </p>
-      <i class="fa-solid fa-gift"></i>
-      <h3>Envío gratis desde $ 2.500</h3>
-      <p>
-        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles
-        de productos. Es un beneficio de Mercado Puntos.
-      </p>
-      <i class="fa-solid fa-user-shield"></i>
-      <h3>Seguridad, de principio a fin</h3>
-      <p>
-        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
-        hacer, porque estás siempre protegid@.
-      </p>
+      <div class="elementos">
+        <div>
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <h3>Pagá con tarjeta o en efectivo</h3>
+          <p>
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo
+            en puntos de pago. ¡Y siempre es seguro!
+          </p>
+  
+        </div>
+        <div>
+          <i class="fa-solid fa-gift"></i>
+          <h3>Envío gratis desde $ 2.500</h3>
+          <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles
+            de productos. Es un beneficio de Mercado Puntos.
+          </p>
+  
+        </div>
+        <div>
+  
+          <i class="fa-solid fa-user-shield"></i>
+          <h3>Seguridad, de principio a fin</h3>
+          <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+            hacer, porque estás siempre protegid@.
+          </p>
+        </div>
+      </div>
+      <br>
       <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
   </body>
