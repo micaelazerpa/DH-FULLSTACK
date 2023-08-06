@@ -64,7 +64,7 @@ button{
 ul{
     list-style: none;
 }
-img{
+section img{
     width: 100%;
     padding: 30px 10px;
 }
@@ -140,6 +140,9 @@ article:hover i{
 }
 div.detalle{
     position: relative;
+}
+.banner img{
+    width: 100%;
 }
 .ultima-vista{
     width: 100%;
