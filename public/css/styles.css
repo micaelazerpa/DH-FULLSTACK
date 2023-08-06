@@ -16,8 +16,9 @@ body{
 }
 main{
     text-align: center;
-    width: 90vw;
+    width: 100vw;
     margin: auto;
+
 }
 header{
     color: #03264C;
@@ -31,6 +32,10 @@ footer{
 
 footer .fa-solid{
     color: #1259c3;
+    transition: all 1s;
+}
+footer:hover .fa-solid{
+    color: #39b54a;
 }
 footer p{
     padding: 10px;
@@ -61,13 +66,14 @@ ul{
 }
 img{
     width: 100%;
+    padding: 30px 10px;
 }
 nav form{
     display: flex;  
     border-radius: 10px;  
     flex-direction: row;
     background-color: white;
-    margin: 30px 0px;
+    margin: 30px 10px;
     padding: 8px;
     height: 40px;
 }
@@ -81,6 +87,7 @@ nav form input{
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 main section article i{
@@ -96,6 +103,29 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+}
+article{
+    transition: all 1s;
+}
+article:hover p{
+    display: inline;
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+article:hover i{
+    animation: camion 3s;
+}
+@keyframes camion {
+    form{
+        position: absolute;
+        right: 20px;
+        top: -15px;
+    }
+    to{
+        position: absolute;
+        transform: rotate(-90deg);
+    }
 }
 #logo{
     width: 50%;
@@ -131,6 +161,7 @@ div.detalle{
     font-size: 16px;
     display: none;
 }
+
 .logo-buscar{
     display: flex;
     justify-content: space-evenly;
@@ -156,21 +187,27 @@ div.detalle{
     justify-content: center;
 }
 
-#nomostrar{
-    display: none;
-}
 @media (min-width: 361px ){
     /* tablets */
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 324px;
     }
+    #logo{
+        width: 30%;
+        height: 30%;
+    }
+    .logo-buscar form{
+        width: 50%;
+    }
+    
     .logo-buscar p{
         display: inline;
+        padding-top: 50px;
+        width: 20%;
+        text-align: center;
     }
-    .descripcion{
-        display:inline;
-    }
+    
     .container{
         display: flex;
         justify-content: space-evenly;
@@ -202,20 +239,6 @@ div.detalle{
 }
 @media (min-width: 769px){
     /* desktop */
-    #logo{
-        width: 30%;
-        height: 30%;
-    }
-    
-    .logo-buscar form{
-        width: 50%;
-    }
-    .logo-buscar p{
-        display: inline;
-        padding-top: 50px;
-        width: 20%;
-        text-align: center;
-    }
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 200px;
@@ -252,7 +275,7 @@ div.detalle{
 }
 
 /* ------------------Formulario----------------- */
-main#main-form{
+main.main-form{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -286,14 +309,14 @@ form label{
 
 form input{
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 3px solid transparent;
     outline: none;
     margin-bottom: 30px;
     transition: border 1s;
 }
 
-form input:focus{
+.main-form form input:focus{
     border: 3px solid rgb(22, 69, 199);
 }
 .form-button{
@@ -309,4 +332,7 @@ form button{
     transition-property: background-color,  border-radius;
     transition-duration: 0.5s;
 }
-
+form button:hover{
+    background-color: #0022AA;
+    border-radius: 5px;
+}
