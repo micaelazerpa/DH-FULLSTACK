@@ -6,7 +6,7 @@ const path=require('path');
 /* app.use(express.static(path.resolve(__dirname,'./public'))); */
 app.use(express.static('public'));
 
-const port=3030;
+const port= process.env.PORT || 3030;
 
 app.listen(port, ()=>(console.log(`Server up: port:${port}`)));
 
